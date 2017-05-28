@@ -1,7 +1,7 @@
 # Alfred Web Search Suggest
 Alfred search suggest workflow for various popular websites. Inspired by the official Google Suggest workflow.
 
-[DOWNLOAD](https://github.com/AkikoZ/alfred-web-search-suggest/releases)
+[**DOWNLOAD**](https://github.com/AkikoZ/alfred-web-search-suggest/releases)
 
 ## Supported Websites
 * [Google](#google)
