@@ -3,12 +3,12 @@ use Alfred\Workflows\Workflow;
 
 require_once('vendor/Workflow.php');
 require_once('vendor/Result.php');
-require_once('request.php');
-require_once('image.php');
+require_once('util/request.php');
+require_once('util/image.php');
 
 $wf = new Workflow;
 
-$thumbnail_dir = getenv('alfred_workflow_cache');
+$thumbnail_dir = getenv('alfred_workflow_cache').'/zhihu/thumbnail';
 initThumbnailDir();
 
 $response = request( "https://www.zhihu.com/autocomplete?token=".urlencode( $query ) );
@@ -34,7 +34,7 @@ foreach( $json as $sugg ):
 				$title = $sugg[1];
 				$subtitle = '【内容】'.$sugg[4].' 个回答';
 				$arg = $type.'/'.$sugg[3];
-				$icon = 'icon.png';
+				$icon = '861BE674-55FF-4779-A44A-A02FF66440B0.png';
 				break;
 		endswitch;
 		

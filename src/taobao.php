@@ -3,7 +3,7 @@ use Alfred\Workflows\Workflow;
 
 require_once('vendor/Workflow.php');
 require_once('vendor/Result.php');
-require_once('request.php');
+require_once('util/request.php');
 
 $wf = new Workflow;
 
@@ -18,7 +18,7 @@ foreach( $result as $sugg ):
 		->title("$key")
 		->subtitle($count.' results')
 		->arg("$key")
-		->icon('icon.png')
+		->icon('186480B7-9F2F-43AD-9994-A9B8E053ADE5.png')
 		->autocomplete("$key");
 endforeach;
 

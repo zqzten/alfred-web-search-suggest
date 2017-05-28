@@ -3,7 +3,7 @@ use Alfred\Workflows\Workflow;
 
 require_once('vendor/Workflow.php');
 require_once('vendor/Result.php');
-require_once('request.php');
+require_once('util/request.php');
 
 $wf = new Workflow;
 
@@ -23,7 +23,7 @@ if (strpos($query, " ") !== false):
 			->title("$key")
 			->subtitle("$description")
 			->arg("$url")
-			->icon('icon.png')
+			->icon('80FCED49-07AA-4C15-9B49-24A52B3AF5D6.png')
 			->autocomplete("$key")
 			->text('copy', "$key")
 			->quicklookurl("$url");
@@ -34,7 +34,7 @@ if (strpos($query, " ") !== false):
 			->title('No Suggestions')
 			->subtitle('No search suggestions found. Search Wikipedia.'.$code.' for '.$query)
 			->arg("https://$code.wikipedia.org/w/index.php?search=".urlencode( $query ))
-			->icon('icon.png')
+			->icon('80FCED49-07AA-4C15-9B49-24A52B3AF5D6.png')
 			->text('copy', "$query");
 	endif;
 endif;

@@ -3,7 +3,7 @@ use Alfred\Workflows\Workflow;
 
 require_once('vendor/Workflow.php');
 require_once('vendor/Result.php');
-require_once('request.php');
+require_once('util/request.php');
 
 $wf = new Workflow;
 
@@ -16,7 +16,7 @@ foreach( $json as $data ):
 		->title("$data")
 		->subtitle('百度一下 '.$data)
 		->arg("$data")
-		->icon('icon.png')
+		->icon('702E9582-5E02-4094-9889-0C4A575F7DAF.png')
 		->autocomplete("$data");
 endforeach;
 

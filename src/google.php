@@ -3,7 +3,7 @@ use Alfred\Workflows\Workflow;
 
 require_once('vendor/Workflow.php');
 require_once('vendor/Result.php');
-require_once('request.php');
+require_once('util/request.php');
 
 $wf = new Workflow;
 
@@ -16,7 +16,7 @@ foreach( $xml as $sugg ):
 		->title("$data")
 		->subtitle('Search Google for '.$data)
 		->arg("$data")
-		->icon('icon.png')
+		->icon('63F60794-BB56-4415-9372-BAF974C3A7E1.png')
 		->autocomplete("$data");
 endforeach;
 
