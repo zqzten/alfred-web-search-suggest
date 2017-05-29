@@ -1,8 +1,8 @@
 <?php
 use Alfred\Workflows\Workflow;
 
-require_once('vendor/Workflow.php');
-require_once('vendor/Result.php');
+require_once('vendor/joetannenbaum/alfred-workflow/Workflow.php');
+require_once('vendor/joetannenbaum/alfred-workflow/Result.php');
 require_once('util/request.php');
 
 $wf = new Workflow;
