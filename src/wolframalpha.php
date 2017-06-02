@@ -5,6 +5,8 @@ require_once('vendor/joetannenbaum/alfred-workflow/Workflow.php');
 require_once('vendor/joetannenbaum/alfred-workflow/Result.php');
 require_once('util/request.php');
 
+const ICON = '67D1CDF9-CA40-4D8E-B66C-E0FF18FCE3CE.png';
+
 $wf = new Workflow;
 
 $response = request( "https://www.wolframalpha.com/input/autocomplete.jsp?i=".urlencode( $query ), $opt );
@@ -18,7 +20,7 @@ foreach( $results as $sugg ):
 		->title("$key")
 		->subtitle("$description")
 		->arg("$key")
-		->icon('67D1CDF9-CA40-4D8E-B66C-E0FF18FCE3CE.png')
+		->icon(ICON)
 		->autocomplete("$key");
 endforeach;
 

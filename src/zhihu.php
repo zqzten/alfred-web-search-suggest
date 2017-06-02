@@ -6,6 +6,8 @@ require_once('vendor/joetannenbaum/alfred-workflow/Result.php');
 require_once('util/request.php');
 require_once('util/image.php');
 
+const ICON = '861BE674-55FF-4779-A44A-A02FF66440B0.png';
+
 $wf = new Workflow;
 
 $thumbnail_dir = getenv('alfred_workflow_cache').'/zhihu/thumbnail';
@@ -34,7 +36,7 @@ foreach( $json as $sugg ):
 				$title = $sugg[1];
 				$subtitle = '【内容】'.$sugg[4].' 个回答';
 				$arg = $type.'/'.$sugg[3];
-				$icon = '861BE674-55FF-4779-A44A-A02FF66440B0.png';
+				$icon = ICON;
 				break;
 		endswitch;
 		

@@ -5,6 +5,8 @@ require_once('vendor/joetannenbaum/alfred-workflow/Workflow.php');
 require_once('vendor/joetannenbaum/alfred-workflow/Result.php');
 require_once('util/request.php');
 
+const ICON = '66A123A9-2115-4480-BAA7-19F66300097C.png';
+
 $wf = new Workflow;
 
 $response = request( "https://s.weibo.com/ajax/suggestion?where=gs_weibo&key=".urlencode( $query ) );
@@ -18,7 +20,7 @@ foreach( $data as $sugg ):
 		->title("$key")
 		->subtitle($count.' results')
 		->arg("$key")
-		->icon('66A123A9-2115-4480-BAA7-19F66300097C.png')
+		->icon(ICON)
 		->autocomplete("$key");
 endforeach;
 

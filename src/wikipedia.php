@@ -5,6 +5,8 @@ require_once('vendor/joetannenbaum/alfred-workflow/Workflow.php');
 require_once('vendor/joetannenbaum/alfred-workflow/Result.php');
 require_once('util/request.php');
 
+const ICON = '80FCED49-07AA-4C15-9B49-24A52B3AF5D6.png';
+
 $wf = new Workflow;
 
 if (strpos($query, " ") !== false):
@@ -23,7 +25,7 @@ if (strpos($query, " ") !== false):
 			->title("$key")
 			->subtitle("$description")
 			->arg("$url")
-			->icon('80FCED49-07AA-4C15-9B49-24A52B3AF5D6.png')
+			->icon(ICON)
 			->autocomplete("$key")
 			->text('copy', "$key")
 			->quicklookurl("$url");
@@ -34,7 +36,7 @@ if (strpos($query, " ") !== false):
 			->title('No Suggestions')
 			->subtitle('No search suggestions found. Search Wikipedia.'.$code.' for '.$query)
 			->arg("https://$code.wikipedia.org/w/index.php?search=".urlencode( $query ))
-			->icon('80FCED49-07AA-4C15-9B49-24A52B3AF5D6.png')
+			->icon(ICON)
 			->text('copy', "$query");
 	endif;
 endif;
