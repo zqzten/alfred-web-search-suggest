@@ -14,14 +14,24 @@ function initDownloadDir($clear) {
     }
 }
 
-function saveAndReturnFile($fileUrl) {
+function saveAndReturnFile($url, $name = null) {
     global $download_dir;
 
-    $filenameIn = $fileUrl;
-    $baseName = uniqid();
-    $filenameOut = $download_dir.'/'.$baseName;
+    if (!$name) $name = uniqid();
+    $path = $download_dir.'/'.$name;
 
-    file_put_contents($filenameOut, file_get_contents($filenameIn));
+    file_put_contents($path, file_get_contents($url));
 
-    return $filenameOut;
+    return $path;
+}
+
+function returnFile($url, $name) {
+    global $download_dir;
+
+    $path = $download_dir.'/'.$name;
+
+    if (file_exists($path))
+        return $path;
+    else
+        return saveAndReturnFile($url, $name);
 }
