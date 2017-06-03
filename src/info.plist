@@ -150,13 +150,13 @@
 				<key>keyword</key>
 				<string>gg</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -200,13 +200,13 @@ require_once('google.php');</string>
 				<key>keyword</key>
 				<string>wiki</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -269,13 +269,13 @@ require_once('wikipedia.php');</string>
 				<key>keyword</key>
 				<string>wa</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving asking suggestions ...</string>
 				<key>script</key>
@@ -334,13 +334,13 @@ require_once('wolframalpha.php');</string>
 				<key>keyword</key>
 				<string>bd</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -398,13 +398,13 @@ require_once('baidu.php');</string>
 				<key>keyword</key>
 				<string>zh</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -481,13 +481,13 @@ require_once('zhihu.php');</string>
 				<key>keyword</key>
 				<string>bl</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -526,13 +526,13 @@ require_once('bilibili.php');</string>
 				<key>keyword</key>
 				<string>wb</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
@@ -590,13 +590,13 @@ require_once('sinaweibo.php');</string>
 				<key>keyword</key>
 				<string>tb</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>

@@ -9,19 +9,19 @@ const ICON = '67D1CDF9-CA40-4D8E-B66C-E0FF18FCE3CE.png';
 
 $wf = new Workflow;
 
-$response = request( "https://www.wolframalpha.com/input/autocomplete.jsp?i=".urlencode( $query ), $opt );
-$json = json_decode( $response );
+$response = request("https://www.wolframalpha.com/input/autocomplete.jsp?i=".urlencode($query), $opt);
+$json = json_decode($response);
 $results = $json->results;
 
-foreach( $results as $sugg ):
-	$key = $sugg->input;
-	$description = $sugg->description;
-	$wf->result()
-		->title("$key")
-		->subtitle("$description")
-		->arg("$key")
-		->icon(ICON)
-		->autocomplete("$key");
-endforeach;
+foreach ($results as $sugg) {
+    $key = $sugg->input;
+    $description = $sugg->description;
+    $wf->result()
+        ->title("$key")
+        ->subtitle("$description")
+        ->arg("$key")
+        ->icon(ICON)
+        ->autocomplete("$key");
+}
 
 echo $wf->output();

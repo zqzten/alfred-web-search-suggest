@@ -2,15 +2,14 @@
 function initDownloadDir($clear) {
     global $download_dir;
 
-    if (!file_exists($download_dir)) {
+    if (!file_exists($download_dir))
         mkdir($download_dir, 0777, true);
-    }
-    
+
     $files = glob($download_dir.'/*');
     if ($clear) {
         foreach ($files as $file) {
-        if (is_file($file))
-            unlink($file);
+            if (is_file($file))
+                unlink($file);
         }
     }
 }
