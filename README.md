@@ -56,3 +56,24 @@ Support basic suggestions.
 Support basic suggestions.
 
 ![taobao](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/taobao.png)
+
+## Additional Notes
+
+### Direct Search
+If you want an alternative to search exactly what you typed, you can add custom web searches in `Features → Web Search` of Alfred Preferences, here's a list of the search URLs above:
+* Google: `built-in`
+* Wikipedia: `built-in`
+* Wolfram|Alpha: `built-in`
+* Baidu: `https://www.baidu.com/s?wd={query}`
+* Zhihu: `https://www.zhihu.com/search?q={query}`
+* bilibili: `https://search.bilibili.com/all?keyword={query}`
+* Sina Weibo: `http://s.weibo.com/weibo/{query}`
+* Taobao: `https://s.taobao.com/search?q={query}`
+
+### Proxy Settings
+Proxy settings are avaliable in the workflow environmant variables, here's an example setting:
+```
+proxy_address: 127.0.0.1
+proxy_port: 1087
+proxy_type: CURLPROXY_HTTP // or CURLPROXY_SOCKS5 if you use a Socks5 proxy
+```
