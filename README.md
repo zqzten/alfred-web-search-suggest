@@ -12,6 +12,7 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 * [bilibili (哔哩哔哩)](#bilibili)
 * [Sina Weibo (新浪微博)](#sina-weibo)
 * [Taobao (淘宝)](#taobao)
+* [Moegirlpedia (萌娘百科)](#moegirlpedia)
 
 ## Details
 
@@ -57,6 +58,11 @@ Support basic suggestions.
 
 ![taobao](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/taobao.png)
 
+### Moegirlpedia
+Support direct term suggestions and preview.
+
+![moegirlpedia](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/moegirlpedia.png)
+
 ## Additional Notes
 
 ### Direct Search
@@ -69,6 +75,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * bilibili: `https://search.bilibili.com/all?keyword={query}`
 * Sina Weibo: `http://s.weibo.com/weibo/{query}`
 * Taobao: `https://s.taobao.com/search?q={query}`
+* Moegirlpedia: `https://zh.moegirl.org/?search={query}`
 
 ### Proxy Settings
 Proxy settings are avaliable in the workflow environmant variables, here's an example setting:

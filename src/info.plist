@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7999A242-8DB6-41F9-BAD7-78C3E4CC0C41</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDC3EC54-50D5-429B-BFE0-3C06F14766AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>80FCED49-07AA-4C15-9B49-24A52B3AF5D6</key>
 		<array>
 			<dict>
@@ -143,6 +156,8 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -193,6 +208,8 @@ require_once('google.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -262,6 +279,8 @@ require_once('wikipedia.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -327,6 +346,8 @@ require_once('wolframalpha.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -391,6 +412,8 @@ require_once('baidu.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -474,6 +497,8 @@ require_once('zhihu.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -519,6 +544,8 @@ require_once('bilibili.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -583,6 +610,8 @@ require_once('sinaweibo.php');</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -642,6 +671,72 @@ require_once('taobao.php');</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>DDC3EC54-50D5-429B-BFE0-3C06F14766AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>moe</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Retrieving search suggestions ...</string>
+				<key>script</key>
+				<string>$query = "{query}";
+
+require_once('moegirlpedia.php');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search 萌娘百科 with Suggestions</string>
+				<key>title</key>
+				<string>Search 萌娘百科</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7999A242-8DB6-41F9-BAD7-78C3E4CC0C41</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow gives you in-line results for various popular websites, helping you find what you want even quicker!</string>
@@ -695,6 +790,13 @@ require_once('taobao.php');</string>
 			<integer>50</integer>
 			<key>ypos</key>
 			<integer>450</integer>
+		</dict>
+		<key>7999A242-8DB6-41F9-BAD7-78C3E4CC0C41</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>1150</integer>
 		</dict>
 		<key>80FCED49-07AA-4C15-9B49-24A52B3AF5D6</key>
 		<dict>
@@ -759,6 +861,13 @@ require_once('taobao.php');</string>
 			<key>ypos</key>
 			<integer>870</integer>
 		</dict>
+		<key>DDC3EC54-50D5-429B-BFE0-3C06F14766AE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>1150</integer>
+		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
@@ -776,7 +885,7 @@ require_once('taobao.php');</string>
 		<string>proxy_address</string>
 	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
 </dict>
