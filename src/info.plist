@@ -112,6 +112,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A66D4C48-6D6D-4531-AF51-8463E488EEB2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>004C4A20-A68E-4502-A7E0-990BD7FF2B46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AE15F1F6-37B0-4A47-BEE1-975354A81227</key>
 		<array>
 			<dict>
@@ -136,21 +149,6 @@
 	<string>Web Search Suggest</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>searcher</key>
-				<integer>1635215215</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemwebsearch</string>
-			<key>uid</key>
-			<string>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -206,6 +204,40 @@ require_once('google.php');</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635215215</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5125D249-AC10-405F-9EE5-63362700B29F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -254,25 +286,6 @@ require_once('wikipedia.php');</string>
 			<string>80FCED49-07AA-4C15-9B49-24A52B3AF5D6</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>5125D249-AC10-405F-9EE5-63362700B29F</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -344,6 +357,77 @@ require_once('wolframalpha.php');</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.pixiv.net/search.php?word={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>004C4A20-A68E-4502-A7E0-990BD7FF2B46</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>px</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Retrieving search suggestions ...</string>
+				<key>script</key>
+				<string>$query = "{query}";
+$opt = array(
+	CURLOPT_PROXYTYPE =&gt; getenv('proxy_type'),
+	CURLOPT_PROXY =&gt; getenv('proxy_address'),
+	CURLOPT_PROXYPORT =&gt; getenv('proxy_port')
+);
+
+require_once('pixiv.php');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search Pixiv with Suggestions</string>
+				<key>title</key>
+				<string>Search Pixiv</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A66D4C48-6D6D-4531-AF51-8463E488EEB2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -410,6 +494,25 @@ require_once('baidu.php');</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://www.zhihu.com/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D5E649CF-505D-458A-913B-ABE9A226E9FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -457,44 +560,6 @@ require_once('zhihu.php');</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://www.zhihu.com/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>D5E649CF-505D-458A-913B-ABE9A226E9FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://search.bilibili.com/all?keyword={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>A10DF307-B927-4060-A800-9B2A6EC4CA52</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -538,6 +603,25 @@ require_once('bilibili.php');</string>
 			<string>AE15F1F6-37B0-4A47-BEE1-975354A81227</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://search.bilibili.com/all?keyword={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A10DF307-B927-4060-A800-9B2A6EC4CA52</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -742,19 +826,26 @@ require_once('moegirlpedia.php');</string>
 	<string>This workflow gives you in-line results for various popular websites, helping you find what you want even quicker!</string>
 	<key>uidata</key>
 	<dict>
-		<key>0528CC1E-2E67-43AF-9016-1B7A76A1CF96</key>
+		<key>004C4A20-A68E-4502-A7E0-990BD7FF2B46</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
+		<key>0528CC1E-2E67-43AF-9016-1B7A76A1CF96</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>590</integer>
+		</dict>
 		<key>186480B7-9F2F-43AD-9994-A9B8E053ADE5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1010</integer>
+			<integer>1150</integer>
 		</dict>
 		<key>5125D249-AC10-405F-9EE5-63362700B29F</key>
 		<dict>
@@ -775,7 +866,7 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>1010</integer>
 		</dict>
 		<key>67D1CDF9-CA40-4D8E-B66C-E0FF18FCE3CE</key>
 		<dict>
@@ -789,14 +880,14 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>590</integer>
 		</dict>
 		<key>7999A242-8DB6-41F9-BAD7-78C3E4CC0C41</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1150</integer>
+			<integer>1290</integer>
 		</dict>
 		<key>80FCED49-07AA-4C15-9B49-24A52B3AF5D6</key>
 		<dict>
@@ -810,28 +901,35 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>730</integer>
 		</dict>
 		<key>89D407F2-9C8D-403B-9503-AE755F3474B2</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1010</integer>
+			<integer>1150</integer>
 		</dict>
 		<key>A10DF307-B927-4060-A800-9B2A6EC4CA52</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>870</integer>
+		</dict>
+		<key>A66D4C48-6D6D-4531-AF51-8463E488EEB2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>450</integer>
 		</dict>
 		<key>AE15F1F6-37B0-4A47-BEE1-975354A81227</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>870</integer>
 		</dict>
 		<key>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</key>
 		<dict>
@@ -852,21 +950,21 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>730</integer>
 		</dict>
 		<key>DB57612B-C4F5-4CF6-8A5D-29C86E40FAB1</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>1010</integer>
 		</dict>
 		<key>DDC3EC54-50D5-429B-BFE0-3C06F14766AE</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1150</integer>
+			<integer>1290</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -885,7 +983,7 @@ require_once('moegirlpedia.php');</string>
 		<string>proxy_address</string>
 	</array>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
 </dict>
