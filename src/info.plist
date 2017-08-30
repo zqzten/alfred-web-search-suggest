@@ -499,7 +499,7 @@ require_once('baidu.php');</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://www.zhihu.com/{query}</string>
+				<string>{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -983,7 +983,7 @@ require_once('moegirlpedia.php');</string>
 		<string>proxy_address</string>
 	</array>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
 </dict>
