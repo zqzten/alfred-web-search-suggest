@@ -27,7 +27,7 @@ if (strpos($query, ' ') !== FALSE) {
             ->arg("$url")
             ->icon(ICON)
             ->autocomplete("$key")
-            ->text('copy', "$key")
+            ->copy("$key")
             ->quicklookurl("$url");
     }
 
@@ -37,7 +37,7 @@ if (strpos($query, ' ') !== FALSE) {
             ->subtitle('No search suggestions found. Search Wikipedia.'.$code.' for '.$query)
             ->arg("https://$code.wikipedia.org/w/index.php?search=".urlencode($query))
             ->icon(ICON)
-            ->text('copy', "$query");
+            ->copy("$query");
     }
 }
 

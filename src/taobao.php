@@ -9,7 +9,7 @@ const ICON = '186480B7-9F2F-43AD-9994-A9B8E053ADE5.png';
 
 $wf = new Workflow;
 
-$response = request("https://suggest.taobao.com/sug?q=".urlencode($query));
+$response = request('https://suggest.taobao.com/sug?q='.urlencode($query));
 $json = json_decode($response);
 $result = $json->result;
 

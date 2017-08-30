@@ -9,7 +9,7 @@ const ICON = '63F60794-BB56-4415-9372-BAF974C3A7E1.png';
 
 $wf = new Workflow;
 
-$xml = request("http://google.com/complete/search?output=toolbar&q=".urlencode($query), $opt);
+$xml = request('http://google.com/complete/search?output=toolbar&q='.urlencode($query), $opt);
 $xml = simplexml_load_string(utf8_encode($xml));
 
 foreach ($xml as $sugg) {

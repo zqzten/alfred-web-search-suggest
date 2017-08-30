@@ -9,7 +9,7 @@ const ICON = '7999A242-8DB6-41F9-BAD7-78C3E4CC0C41.png';
 
 $wf = new Workflow;
 
-$response = request("https://zh.moegirl.org/api.php?action=opensearch&search=".urlencode($query));
+$response = request('https://zh.moegirl.org/api.php?action=opensearch&search='.urlencode($query));
 $json = json_decode($response);
 
 for ($i = 0; $i < count($json[1]); $i++) {

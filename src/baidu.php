@@ -9,7 +9,7 @@ const ICON = '702E9582-5E02-4094-9889-0C4A575F7DAF.png';
 
 $wf = new Workflow;
 
-$response = request("http://suggestion.baidu.com/su?&wd=".urlencode($query));
+$response = request('http://suggestion.baidu.com/su?&wd='.urlencode($query));
 preg_match('/s:(\[.*\])\}\);/', stripslashes(iconv('GB2312', 'UTF-8', $response)), $match);
 $json = json_decode($match[1]);
 

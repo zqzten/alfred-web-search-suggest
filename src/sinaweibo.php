@@ -9,7 +9,7 @@ const ICON = '66A123A9-2115-4480-BAA7-19F66300097C.png';
 
 $wf = new Workflow;
 
-$response = request("https://s.weibo.com/ajax/suggestion?where=gs_weibo&key=".urlencode($query));
+$response = request('https://s.weibo.com/ajax/suggestion?where=gs_weibo&key='.urlencode($query));
 $json = json_decode($response);
 $data = $json->data;
 
