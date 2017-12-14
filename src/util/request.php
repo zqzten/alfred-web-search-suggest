@@ -21,13 +21,7 @@ function request($url = null, $options = null) {
         foreach ($options as $k => $v)
             $defaults[$k] = $v;
 
-    array_filter($defaults,
-        function($a) {
-            if ($a == '' || $a == null)
-                return false;
-            else
-                return true;
-    });
+    array_filter($defaults, function($a) { return !empty($a); });
 
     $ch = curl_init();
     curl_setopt_array($ch, $defaults);

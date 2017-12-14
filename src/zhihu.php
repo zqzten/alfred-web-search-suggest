@@ -11,14 +11,14 @@ const ICON = '861BE674-55FF-4779-A44A-A02FF66440B0.png';
 $wf = new Workflow;
 
 $download_dir = getenv('alfred_workflow_cache').'/zhihu';
-initDownloadDir(TRUE);
+initDownloadDir(true);
 
 $response = request('https://www.zhihu.com/autocomplete?token='.urlencode($query));
 $json = json_decode(mb_convert_encoding($response, 'UTF-8', 'HTML-ENTITIES'))[0];
 
 foreach ($json as $sugg) {
     if (is_array($sugg)) {
-        $matched = TRUE;
+        $matched = true;
         $type = $sugg[0];
         switch ($type) {
             case 'topic':
@@ -46,7 +46,7 @@ foreach ($json as $sugg) {
                 $icon = ICON;
                 break;
             default:
-                $matched = FALSE;
+                $matched = false;
                 break;
         }
 

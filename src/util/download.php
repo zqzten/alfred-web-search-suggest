@@ -17,7 +17,7 @@ function initDownloadDir($clear) {
 function saveAndReturnFile($url, $name = null) {
     global $download_dir;
 
-    if (!$name) $name = uniqid();
+    if (is_null($name)) $name = uniqid();
     $path = $download_dir.'/'.$name;
 
     file_put_contents($path, file_get_contents($url));

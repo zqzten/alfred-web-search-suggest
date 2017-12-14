@@ -9,7 +9,7 @@ const ICON = '80FCED49-07AA-4C15-9B49-24A52B3AF5D6.png';
 
 $wf = new Workflow;
 
-if (strpos($query, ' ') !== FALSE) {
+if (strpos($query, ' ') !== false) {
     $parts = explode(' ', $query);
     $code = array_shift($parts);
     $query = implode(' ', $parts);
@@ -31,7 +31,7 @@ if (strpos($query, ' ') !== FALSE) {
             ->quicklookurl("$url");
     }
 
-    if (count($json[1]) == 0) {
+    if (count($json[1]) === 0) {
         $wf->result()
             ->title('No Suggestions')
             ->subtitle('No search suggestions found. Search Wikipedia.'.$code.' for '.$query)
