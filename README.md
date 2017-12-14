@@ -15,6 +15,7 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 * [bilibili (哔哩哔哩)](#bilibili)
 * [Sina Weibo (新浪微博)](#sina-weibo)
 * [Taobao (淘宝)](#taobao)
+* [JoyBuy (京东)](#joybuy)
 * [Moegirlpedia (萌娘百科)](#moegirlpedia)
 
 ## Details
@@ -75,6 +76,12 @@ Support basic suggestions.
 
 ![taobao](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/taobao.png)
 
+### JoyBuy
+
+Support basic suggestions.
+
+![joybuy](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/joybuy.png)
+
 ### Moegirlpedia
 
 Support direct term suggestions and preview.
@@ -94,8 +101,9 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Baidu: `https://www.baidu.com/s?wd={query}`
 * Zhihu: `https://www.zhihu.com/search?q={query}`
 * bilibili: `https://search.bilibili.com/all?keyword={query}`
-* Sina Weibo: `http://s.weibo.com/weibo/{query}`
+* Sina Weibo: `https://s.weibo.com/weibo/{query}`
 * Taobao: `https://s.taobao.com/search?q={query}`
+* JoyBuy: `https://search.jd.com/Search?enc=utf-8&keyword={query}`
 * Moegirlpedia: `https://zh.moegirl.org/?search={query}`
 
 ### Proxy Settings
