@@ -24,69 +24,69 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 
 Support basic suggestions. Proxy settings are available in the workflow environment variables.
 
-![google](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/google.png)
+![google](screenshots/google.png)
 
 ### Wikipedia
 
 Support direct term suggestions and preview, language can be specified in the first arg. Proxy settings are available in the workflow environment variables.
 
-![wikipedia-en](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/wikipedia-en.png)
+![wikipedia-en](screenshots/wikipedia-en.png)
 
-![wikipedia-zh](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/wikipedia-zh.png)
+![wikipedia-zh](screenshots/wikipedia-zh.png)
 
 ### Wolfram|Alpha
 
 Support direct term suggestions. Proxy settings are available in the workflow environment variables.
 
-![wolframalpha](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/wolframalpha.png)
+![wolframalpha](screenshots/wolframalpha.png)
 
 ### Pixiv
 
 Support basic suggestions. Proxy settings are available in the workflow environment variables.
 
-![pixiv](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/pixiv.png)
+![pixiv](screenshots/pixiv.png)
 
 ### Baidu
 
 Support basic suggestions.
 
-![baidu](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/baidu.png)
+![baidu](screenshots/baidu.png)
 
 ### Zhihu
 
 Support direct term suggestions and preview.
 
-![zhihu](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/zhihu.png)
+![zhihu](screenshots/zhihu.png)
 
 ### bilibili
 
 Support basic suggestions.
 
-![bilibili](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/bilibili.png)
+![bilibili](screenshots/bilibili.png)
 
 ### Sina Weibo
 
 Support basic suggestions.
 
-![sinaweibo](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/sinaweibo.png)
+![sinaweibo](screenshots/sinaweibo.png)
 
 ### Taobao
 
 Support basic suggestions.
 
-![taobao](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/taobao.png)
+![taobao](screenshots/taobao.png)
 
 ### JoyBuy
 
 Support basic suggestions.
 
-![joybuy](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/joybuy.png)
+![joybuy](screenshots/joybuy.png)
 
 ### Moegirlpedia
 
 Support direct term suggestions and preview.
 
-![moegirlpedia](https://github.com/AkikoZ/alfred-web-search-suggest/blob/master/screenshots/moegirlpedia.png)
+![moegirlpedia](screenshots/moegirlpedia.png)
 
 ## Additional Notes
 
