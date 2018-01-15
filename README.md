@@ -87,7 +87,7 @@ Support basic suggestions.
 
 Support direct term suggestions and preview, type can be specified in the first arg.
 
-注：共支持 6 种条目类型的搜索，分别为全部（all）、动画（anime）、书籍（book）、音乐（music）、游戏（game）、三次元（real）；对于每一条搜索结果，副标题默认显示该条目的类型（如果当前搜索类型为全部）和中文名称（若有），按 ⌘ 可显示其简介（若有），按 ⌃ 可显示其排名与评分（若有）。
+注：共支持 6 种条目类型的搜索，分别为全部（all）、动画（anime）、书籍（book）、音乐（music）、游戏（game）、三次元（real）；对于每一条搜索结果，副标题默认显示该条目的类型（如果当前搜索类型为全部）和中文名称（若有），按 ⌘ 可显示其简介（若有），按 ⌃ 可显示其排名与评分（若有）。
 
 ![bangumi-all](screenshots/bangumi-all.png)
 
@@ -115,6 +115,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Sina Weibo: `https://s.weibo.com/weibo/{query}`
 * Taobao: `https://s.taobao.com/search?q={query}`
 * JoyBuy: `https://search.jd.com/Search?enc=utf-8&keyword={query}`
+* Bangumi: `http://bangumi.tv/subject_search/{query}`
 * Moegirlpedia: `https://zh.moegirl.org/?search={query}`
 
 ### Proxy Settings
