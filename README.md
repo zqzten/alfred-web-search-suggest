@@ -16,6 +16,7 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 * [Sina Weibo (新浪微博)](#sina-weibo)
 * [Taobao (淘宝)](#taobao)
 * [JoyBuy (京东)](#joybuy)
+* [Bangumi (番组计划)](#bangumi)
 * [Moegirlpedia (萌娘百科)](#moegirlpedia)
 
 ## Details
@@ -28,7 +29,7 @@ Support basic suggestions. Proxy settings are available in the workflow environm
 
 ### Wikipedia
 
-Support direct term suggestions and preview, language can be specified in the first arg. Proxy settings are available in the workflow environment variables.
+Support direct term suggestions and preview, language can be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg. Proxy settings are available in the workflow environment variables.
 
 ![wikipedia-en](screenshots/wikipedia-en.png)
 
@@ -81,6 +82,16 @@ Support basic suggestions.
 Support basic suggestions.
 
 ![joybuy](screenshots/joybuy.png)
+
+### Bangumi
+
+Support direct term suggestions and preview, type can be specified in the first arg.
+
+注：共支持 6 种条目类型的搜索，分别为全部（all）、动画（anime）、书籍（book）、音乐（music）、游戏（game）、三次元（real）；对于每一条搜索结果，副标题默认显示该条目的类型（如果当前搜索类型为全部）和中文名称（若有），按 ⌘ 可显示其简介（若有），按 ⌃ 可显示其排名与评分（若有）。
+
+![bangumi-all](screenshots/bangumi-all.png)
+
+![bangumi-anime](screenshots/bangumi-anime.png)
 
 ### Moegirlpedia
 
