@@ -13,13 +13,13 @@ $xml = request('http://google.com/complete/search?output=toolbar&q='.urlencode($
 $xml = simplexml_load_string(utf8_encode($xml));
 
 foreach ($xml as $sugg) {
-    $data = $sugg->suggestion->attributes()->data;
+    $data = (string) $sugg->suggestion->attributes()->data;
     $wf->result()
-        ->title("$data")
+        ->title($data)
         ->subtitle('Search Google for '.$data)
-        ->arg("$data")
+        ->arg($data)
         ->icon(ICON)
-        ->autocomplete("$data");
+        ->autocomplete($data);
 }
 
 echo $wf->output();

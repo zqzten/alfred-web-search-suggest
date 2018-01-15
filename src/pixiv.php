@@ -18,11 +18,11 @@ foreach ($results as $sugg) {
     $key = $sugg->tag_name;
     $count = $sugg->access_count;
     $wf->result()
-        ->title("$key")
+        ->title($key)
         ->subtitle($count.' results')
-        ->arg("$key")
+        ->arg($key)
         ->icon(ICON)
-        ->autocomplete("$key");
+        ->autocomplete($key);
 }
 
 echo $wf->output();

@@ -52,13 +52,13 @@ foreach ($json as $sugg) {
 
         if ($matched) {
             $wf->result()
-                ->title("$title")
-                ->subtitle("$subtitle")
-                ->arg("$arg")
-                ->icon("$icon")
-                ->autocomplete("$title")
-                ->copy("$title")
-                ->quicklookurl("$arg");
+                ->title($title)
+                ->subtitle($subtitle)
+                ->arg($arg)
+                ->icon($icon)
+                ->autocomplete($title)
+                ->copy($title)
+                ->quicklookurl($arg);
         }
     }
 }

@@ -15,11 +15,11 @@ $json = json_decode($response, true);
 foreach ($json as $key => $value) {
     $data = $value['name'];
     $wf->result()
-        ->title("$data")
+        ->title($data)
         ->subtitle('Search 哔哩哔哩 for '.$data)
-        ->arg("$data")
+        ->arg($data)
         ->icon(ICON)
-        ->autocomplete("$data");
+        ->autocomplete($data);
 }
 
 echo $wf->output();

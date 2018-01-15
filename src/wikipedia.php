@@ -22,13 +22,13 @@ if (strpos($query, ' ') !== false) {
         $description = $json[2][$i];
         $url = $json[3][$i];
         $wf->result()
-            ->title("$key")
-            ->subtitle("$description")
-            ->arg("$url")
+            ->title($key)
+            ->subtitle($description)
+            ->arg($url)
             ->icon(ICON)
-            ->autocomplete("$key")
-            ->copy("$key")
-            ->quicklookurl("$url");
+            ->autocomplete($key)
+            ->copy($key)
+            ->quicklookurl($url);
     }
 
     if (count($json[1]) === 0) {
@@ -37,7 +37,7 @@ if (strpos($query, ' ') !== false) {
             ->subtitle('No search suggestions found. Search Wikipedia.'.$code.' for '.$query)
             ->arg("https://$code.wikipedia.org/w/index.php?search=".urlencode($query))
             ->icon(ICON)
-            ->copy("$query");
+            ->copy($query);
     }
 }
 

@@ -17,13 +17,13 @@ for ($i = 0; $i < count($json[1]); $i++) {
     $description = $json[2][$i];
     $url = $json[3][$i];
     $wf->result()
-        ->title("$key")
-        ->subtitle("$description")
-        ->arg("$url")
+        ->title($key)
+        ->subtitle($description)
+        ->arg($url)
         ->icon(ICON)
-        ->autocomplete("$key")
-        ->copy("$key")
-        ->quicklookurl("$url");
+        ->autocomplete($key)
+        ->copy($key)
+        ->quicklookurl($url);
 }
 
 echo $wf->output();

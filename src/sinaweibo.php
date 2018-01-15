@@ -17,11 +17,11 @@ foreach ($data as $sugg) {
     $key = $sugg->key;
     $count = $sugg->count;
     $wf->result()
-        ->title("$key")
+        ->title($key)
         ->subtitle($count.' results')
-        ->arg("$key")
+        ->arg($key)
         ->icon(ICON)
-        ->autocomplete("$key");
+        ->autocomplete($key);
 }
 
 echo $wf->output();

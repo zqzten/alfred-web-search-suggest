@@ -18,11 +18,11 @@ foreach ($json as $sugg) {
     if (is_null($key)) continue;
     $count = $sugg->qresult;
     $wf->result()
-        ->title("$key")
+        ->title($key)
         ->subtitle($count.' results')
-        ->arg("$key")
+        ->arg($key)
         ->icon(ICON)
-        ->autocomplete("$key");
+        ->autocomplete($key);
 }
 
 echo $wf->output();
