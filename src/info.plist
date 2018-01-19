@@ -202,11 +202,7 @@
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
 				<string>$query = "{query}";
-$opt = array(
-	CURLOPT_PROXYTYPE =&gt; getenv('proxy_type'),
-	CURLOPT_PROXY =&gt; getenv('proxy_address'),
-	CURLOPT_PROXYPORT =&gt; getenv('proxy_port')
-);
+$opt[CURLOPT_PROXY] = getenv('proxy');
 
 require_once('google.php');</string>
 				<key>scriptargtype</key>
@@ -290,11 +286,7 @@ require_once('google.php');</string>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
 				<string>$query = "{query}";
-$opt = array(
-	CURLOPT_PROXYTYPE =&gt; getenv('proxy_type'),
-	CURLOPT_PROXY =&gt; getenv('proxy_address'),
-	CURLOPT_PROXYPORT =&gt; getenv('proxy_port')
-);
+$opt[CURLOPT_PROXY] = getenv('proxy');
 
 require_once('wikipedia.php');</string>
 				<key>scriptargtype</key>
@@ -344,11 +336,7 @@ require_once('wikipedia.php');</string>
 				<string>Retrieving asking suggestions ...</string>
 				<key>script</key>
 				<string>$query = "{query}";
-$opt = array(
-	CURLOPT_PROXYTYPE =&gt; getenv('proxy_type'),
-	CURLOPT_PROXY =&gt; getenv('proxy_address'),
-	CURLOPT_PROXYPORT =&gt; getenv('proxy_port')
-);
+$opt[CURLOPT_PROXY] = getenv('proxy');
 
 require_once('wolframalpha.php');</string>
 				<key>scriptargtype</key>
@@ -432,11 +420,7 @@ require_once('wolframalpha.php');</string>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
 				<string>$query = "{query}";
-$opt = array(
-	CURLOPT_PROXYTYPE =&gt; getenv('proxy_type'),
-	CURLOPT_PROXY =&gt; getenv('proxy_address'),
-	CURLOPT_PROXYPORT =&gt; getenv('proxy_port')
-);
+$opt[CURLOPT_PROXY] = getenv('proxy');
 
 require_once('pixiv.php');</string>
 				<key>scriptargtype</key>
@@ -1179,21 +1163,15 @@ require_once('moegirlpedia.php');</string>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>proxy_address</key>
-		<string>127.0.0.1</string>
-		<key>proxy_port</key>
-		<string>1087</string>
-		<key>proxy_type</key>
-		<string>CURLPROXY_HTTP</string>
+		<key>proxy</key>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>proxy_port</string>
-		<string>proxy_type</string>
-		<string>proxy_address</string>
+		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.7</string>
+	<string>1.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
 </dict>

@@ -23,13 +23,13 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 
 ### Google
 
-Support basic suggestions. Proxy settings are available in the workflow environment variables.
+Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
 
 ![google](screenshots/google.png)
 
 ### Wikipedia
 
-Support direct term suggestions and preview, language can be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg. Proxy settings are available in the workflow environment variables.
+Support direct term suggestions and preview, language can be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
 
 ![wikipedia-en](screenshots/wikipedia-en.png)
 
@@ -37,13 +37,13 @@ Support direct term suggestions and preview, language can be specified with [ISO
 
 ### Wolfram|Alpha
 
-Support direct term suggestions. Proxy settings are available in the workflow environment variables.
+Support direct term suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
 
 ![wolframalpha](screenshots/wolframalpha.png)
 
 ### Pixiv
 
-Support basic suggestions. Proxy settings are available in the workflow environment variables.
+Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
 
 ![pixiv](screenshots/pixiv.png)
 
@@ -87,7 +87,7 @@ Support basic suggestions.
 
 Support direct term suggestions and preview, type can be specified in the first arg.
 
-注：共支持 6 种条目类型的搜索，分别为全部（all）、动画（anime）、书籍（book）、音乐（music）、游戏（game）、三次元（real）；对于每一条搜索结果，副标题默认显示该条目的类型（如果当前搜索类型为全部）和中文名称（若有），按 ⌘ 可显示其简介（若有），按 ⌃ 可显示其排名与评分（若有）。
+注：共支持 6 种条目类型的搜索，分别为全部（all）、动画（anime）、书籍（book）、音乐（music）、游戏（game）、三次元（real）；对于每一条搜索结果，副标题默认显示该条目的类型（如果当前搜索类型为全部）和中文名称（若有），按 **⌘** 可显示其简介（若有），按 **⌃** 可显示其排名与评分（若有）。
 
 ![bangumi-all](screenshots/bangumi-all.png)
 
@@ -118,12 +118,11 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Bangumi: `http://bangumi.tv/subject_search/{query}`
 * Moegirlpedia: `https://zh.moegirl.org/?search={query}`
 
-### Proxy Settings
+### Proxy Setting
 
-Proxy settings are avaliable in the workflow environment variables, here's an example setting:
+Proxy setting is avaliable in the workflow environment variables as `proxy`, here's some example settings:
 
-```text
-proxy_address: 127.0.0.1
-proxy_port: 1087
-proxy_type: CURLPROXY_HTTP // or CURLPROXY_SOCKS5 if you use a Socks5 proxy
-```
+* If you use an HTTP proxy at `127.0.0.1:1087` without credentials, set `proxy` to `http://127.0.0.1:1087`
+* If you use a SOCKS5 proxy at `127.0.0.1:1086` with username `user` and password `pass`, set `proxy` to `socks5://user:pass@127.0.0.1:1086`
+
+For more details, check the [libcurl doc](https://curl.haxx.se/libcurl/c/CURLOPT_PROXY.html).
