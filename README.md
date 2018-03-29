@@ -9,6 +9,7 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 * [Google](#google)
 * [Wikipedia](#wikipedia)
 * [Wolfram|Alpha](#wolframalpha)
+* [Amazon](#amazon)
 * [Pixiv](#pixiv)
 * [Baidu (百度)](#baidu)
 * [Zhihu (知乎)](#zhihu)
@@ -40,6 +41,12 @@ Support direct term suggestions and preview, language can be specified with [ISO
 Support direct term suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
 
 ![wolframalpha](screenshots/wolframalpha.png)
+
+### Amazon
+
+Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+
+![amazon](screenshots/amazon.png)
 
 ### Pixiv
 
@@ -108,6 +115,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Google: `built-in`
 * Wikipedia: `built-in`
 * Wolfram|Alpha: `built-in`
+* Amazon: `built-in`
 * Pixiv: `https://www.pixiv.net/search.php?word={query}`
 * Baidu: `https://www.baidu.com/s?wd={query}`
 * Zhihu: `https://www.zhihu.com/search?q={query}`
