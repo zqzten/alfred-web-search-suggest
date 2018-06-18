@@ -43,18 +43,19 @@ if (strpos($query, ' ') !== false) {
 
     if ($results) {
         foreach ($results as $sugg) {
-            $name = $sugg->name;
-            $nameCN = $sugg->name_cn;
+            $name = html_entity_decode($sugg->name, ENT_QUOTES | ENT_HTML5);
+            $nameCN = html_entity_decode($sugg->name_cn, ENT_QUOTES | ENT_HTML5);
             $url = $sugg->url;
+            $icon = $sugg->images === null ? ICON : $sugg->images->small;
             $rank = $sugg->rank;
             $score = $sugg->rating->score;
             $wf->result()
                 ->title($name)
                 ->subtitle(($type === 'all' ? '【'.$typeNameDict[$sugg->type].'】' : '').$nameCN)
                 ->arg($url)
-                ->icon(saveAndReturnFile($sugg->images->small))
+                ->icon(saveAndReturnFile($icon))
                 ->autocomplete($name)
-                ->cmd(str_replace("\r\n", '', $sugg->summary), $url)
+                ->cmd(str_replace("\r\n", '', html_entity_decode($sugg->summary, ENT_QUOTES | ENT_HTML5)), $url)
                 ->ctrl(($rank === 0 ? '' : "Rank: $rank ").($score === 0 ? '' : "Score: $score"), $url)
                 ->copy($name)
                 ->quicklookurl($url);

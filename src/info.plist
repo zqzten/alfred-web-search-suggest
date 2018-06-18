@@ -1263,7 +1263,7 @@ require_once('moegirlpedia.php');</string>
 		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.9</string>
+	<string>1.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
 </dict>
