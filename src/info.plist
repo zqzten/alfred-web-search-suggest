@@ -597,7 +597,7 @@ require_once('baidu.php');</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>{query}</string>
+				<string>https://www.zhihu.com/search?q={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -782,7 +782,7 @@ require_once('sinaweibo.php');</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://s.weibo.com/weibo/{query}</string>
+				<string>https://s.weibo.com/weibo?q={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -1263,7 +1263,7 @@ require_once('moegirlpedia.php');</string>
 		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
 </dict>

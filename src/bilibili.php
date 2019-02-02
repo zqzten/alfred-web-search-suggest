@@ -9,7 +9,7 @@ const ICON = 'AE15F1F6-37B0-4A47-BEE1-975354A81227.png';
 
 $wf = new Workflow;
 
-$response = request('https://api.bilibili.cn/suggest?term='.urlencode($query));
+$response = request('https://s.search.bilibili.com/main/suggest?term='.urlencode($query));
 $json = json_decode($response, true);
 
 foreach ($json as $key => $value) {

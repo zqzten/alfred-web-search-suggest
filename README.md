@@ -62,7 +62,7 @@ Support basic suggestions.
 
 ### Zhihu
 
-Support direct term suggestions and preview.
+Support basic suggestions.
 
 ![zhihu](screenshots/zhihu.png)
 
@@ -120,7 +120,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Baidu: `https://www.baidu.com/s?wd={query}`
 * Zhihu: `https://www.zhihu.com/search?q={query}`
 * bilibili: `https://search.bilibili.com/all?keyword={query}`
-* Sina Weibo: `https://s.weibo.com/weibo/{query}`
+* Sina Weibo: `https://s.weibo.com/weibo?q={query}`
 * Taobao: `https://s.taobao.com/search?q={query}`
 * JoyBuy: `https://search.jd.com/Search?enc=utf-8&keyword={query}`
 * Bangumi: `http://bangumi.tv/subject_search/{query}`
