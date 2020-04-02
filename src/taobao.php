@@ -15,7 +15,7 @@ $result = $json->result;
 
 foreach ($result as $sugg) {
     $key = $sugg[0];
-    $count = $sugg[1];
+    $count = round($sugg[1]);
     $wf->result()
         ->title($key)
         ->subtitle($count.' results')
