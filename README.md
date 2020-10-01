@@ -1,6 +1,6 @@
 # Alfred Web Search Suggest
 
-Alfred search suggest workflow for various popular websites. Inspired by the official Google Suggest workflow.
+Alfred search helps suggest you Workflow for various popular and established websites, making your searches efficiently precise and time saving too. Inspired from the well known official Google Suggest Workflow, (exclusively From Google)
 
 [**DOWNLOAD**](https://github.com/AkikoZ/alfred-web-search-suggest/releases)
 
@@ -24,7 +24,7 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 
 ### Google
 
-Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support basic suggestions. [Proxy setting](#proxy-setting) is available and ready to use in the workflow environment variables.
 
 ![google](screenshots/google.png)
 
