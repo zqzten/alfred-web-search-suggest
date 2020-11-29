@@ -124,7 +124,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Taobao: `https://s.taobao.com/search?q={query}`
 * JoyBuy: `https://search.jd.com/Search?enc=utf-8&keyword={query}`
 * Bangumi: `http://bangumi.tv/subject_search/{query}`
-* Moegirlpedia: `https://zh.moegirl.org/?search={query}`
+* Moegirlpedia: `https://zh.moegirl.org.cn/index.php?search={query}`
 
 ### Proxy Setting
 

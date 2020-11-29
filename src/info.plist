@@ -195,6 +195,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -236,7 +238,7 @@ require_once('google.php');</string>
 			<key>uid</key>
 			<string>63F60794-BB56-4415-9372-BAF974C3A7E1</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -279,6 +281,8 @@ require_once('google.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -320,7 +324,7 @@ require_once('wikipedia.php');</string>
 			<key>uid</key>
 			<string>80FCED49-07AA-4C15-9B49-24A52B3AF5D6</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -329,6 +333,8 @@ require_once('wikipedia.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -370,7 +376,7 @@ require_once('wolframalpha.php');</string>
 			<key>uid</key>
 			<string>67D1CDF9-CA40-4D8E-B66C-E0FF18FCE3CE</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -394,6 +400,8 @@ require_once('wolframalpha.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -435,7 +443,7 @@ require_once('amazon.php');</string>
 			<key>uid</key>
 			<string>3444F1D5-FE79-4B5F-A37D-DAA45D7D02F0</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -478,6 +486,8 @@ require_once('amazon.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -519,7 +529,7 @@ require_once('pixiv.php');</string>
 			<key>uid</key>
 			<string>A66D4C48-6D6D-4531-AF51-8463E488EEB2</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -528,6 +538,8 @@ require_once('pixiv.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -568,7 +580,7 @@ require_once('baidu.php');</string>
 			<key>uid</key>
 			<string>702E9582-5E02-4094-9889-0C4A575F7DAF</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -615,6 +627,8 @@ require_once('baidu.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -655,7 +669,7 @@ require_once('zhihu.php');</string>
 			<key>uid</key>
 			<string>861BE674-55FF-4779-A44A-A02FF66440B0</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -664,6 +678,8 @@ require_once('zhihu.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -704,7 +720,7 @@ require_once('bilibili.php');</string>
 			<key>uid</key>
 			<string>AE15F1F6-37B0-4A47-BEE1-975354A81227</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -732,6 +748,8 @@ require_once('bilibili.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -772,7 +790,7 @@ require_once('sinaweibo.php');</string>
 			<key>uid</key>
 			<string>66A123A9-2115-4480-BAA7-19F66300097C</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -819,6 +837,8 @@ require_once('sinaweibo.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -859,7 +879,7 @@ require_once('taobao.php');</string>
 			<key>uid</key>
 			<string>186480B7-9F2F-43AD-9994-A9B8E053ADE5</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -887,6 +907,8 @@ require_once('taobao.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -927,7 +949,7 @@ require_once('joybuy.php');</string>
 			<key>uid</key>
 			<string>B1C4E5F1-FE5D-4505-9AD6-3F12A4F4ACC8</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -955,6 +977,8 @@ require_once('joybuy.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -995,7 +1019,7 @@ require_once('bangumi.php');</string>
 			<key>uid</key>
 			<string>7C5A1AA4-8766-42A7-ADC5-6B91963B3CD9</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1023,6 +1047,8 @@ require_once('bangumi.php');</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1043,6 +1069,7 @@ require_once('bangumi.php');</string>
 				<string>Retrieving search suggestions ...</string>
 				<key>script</key>
 				<string>$query = "{query}";
+$opt[CURLOPT_PROXY] = getenv('proxy');
 
 require_once('moegirlpedia.php');</string>
 				<key>scriptargtype</key>
@@ -1063,7 +1090,7 @@ require_once('moegirlpedia.php');</string>
 			<key>uid</key>
 			<string>7999A242-8DB6-41F9-BAD7-78C3E4CC0C41</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -1256,15 +1283,15 @@ require_once('moegirlpedia.php');</string>
 	<key>variables</key>
 	<dict>
 		<key>proxy</key>
-		<string>http://127.0.0.1:1087</string>
+		<string>http://127.0.0.1:7890</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.11</string>
+	<string>1.12</string>
 	<key>webaddress</key>
-	<string>https://github.com/AkikoZ/alfred-web-search-suggest</string>
+	<string>https://github.com/zqzten/alfred-web-search-suggest</string>
 </dict>
 </plist>
