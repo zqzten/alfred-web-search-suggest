@@ -128,7 +128,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 
 ### Proxy Setting
 
-Proxy setting is avaliable in the workflow environment variables as `proxy`, here's some example settings:
+Proxy setting is avaliable as a [workflow environment variable](https://www.alfredapp.com/help/workflows/advanced/variables/#environment) named `proxy`, here's some example settings:
 
 * If you use an HTTP proxy at `127.0.0.1:1087` without credentials, set `proxy` to `http://127.0.0.1:1087`
 * If you use a SOCKS5 proxy at `127.0.0.1:1086` with username `user` and password `pass`, set `proxy` to `socks5://user:pass@127.0.0.1:1086`
