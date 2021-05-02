@@ -192,7 +192,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>AkikoZ</string>
+	<string>Zach Zhu</string>
 	<key>description</key>
 	<string>Get web search suggestions</string>
 	<key>disabled</key>
@@ -1388,7 +1388,7 @@ require_once('moegirlpedia.php');</string>
 		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.12</string>
+	<string>1.13</string>
 	<key>webaddress</key>
 	<string>https://github.com/zqzten/alfred-web-search-suggest</string>
 </dict>
