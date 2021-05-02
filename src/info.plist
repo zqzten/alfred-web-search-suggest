@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>66323B0D-F24D-4F0C-BCB2-42D2BFA92C0F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>71D9DDA7-98FB-48B8-9D0C-0B8C17ED7E22</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>66A123A9-2115-4480-BAA7-19F66300097C</key>
 		<array>
 			<dict>
@@ -459,6 +472,77 @@ require_once('amazon.php');</string>
 			<string>D3798DBA-B371-47CF-8AB5-E3837B8F876E</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>71D9DDA7-98FB-48B8-9D0C-0B8C17ED7E22</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>imdb</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Retrieving search suggestions ...</string>
+				<key>script</key>
+				<string>$query = "{query}";
+$opt[CURLOPT_PROXY] = getenv('proxy');
+
+require_once('imdb.php');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search IMDB with Suggestions</string>
+				<key>title</key>
+				<string>Search IMDB</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>66323B0D-F24D-4F0C-BCB2-42D2BFA92C0F</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1100,21 +1184,21 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>730</integer>
 		</dict>
 		<key>0528CC1E-2E67-43AF-9016-1B7A76A1CF96</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>870</integer>
 		</dict>
 		<key>186480B7-9F2F-43AD-9994-A9B8E053ADE5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1290</integer>
+			<integer>1430</integer>
 		</dict>
 		<key>3444F1D5-FE79-4B5F-A37D-DAA45D7D02F0</key>
 		<dict>
@@ -1137,6 +1221,13 @@ require_once('moegirlpedia.php');</string>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
+		<key>66323B0D-F24D-4F0C-BCB2-42D2BFA92C0F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>590</integer>
+		</dict>
 		<key>66A123A9-2115-4480-BAA7-19F66300097C</key>
 		<dict>
 			<key>note</key>
@@ -1144,7 +1235,7 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1150</integer>
+			<integer>1290</integer>
 		</dict>
 		<key>67D1CDF9-CA40-4D8E-B66C-E0FF18FCE3CE</key>
 		<dict>
@@ -1158,21 +1249,28 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>730</integer>
+			<integer>870</integer>
+		</dict>
+		<key>71D9DDA7-98FB-48B8-9D0C-0B8C17ED7E22</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>590</integer>
 		</dict>
 		<key>7999A242-8DB6-41F9-BAD7-78C3E4CC0C41</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1710</integer>
+			<integer>1850</integer>
 		</dict>
 		<key>7C5A1AA4-8766-42A7-ADC5-6B91963B3CD9</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1570</integer>
+			<integer>1710</integer>
 		</dict>
 		<key>80FCED49-07AA-4C15-9B49-24A52B3AF5D6</key>
 		<dict>
@@ -1186,56 +1284,56 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>1010</integer>
 		</dict>
 		<key>89D407F2-9C8D-403B-9503-AE755F3474B2</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1290</integer>
+			<integer>1430</integer>
 		</dict>
 		<key>A10DF307-B927-4060-A800-9B2A6EC4CA52</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1010</integer>
+			<integer>1150</integer>
 		</dict>
 		<key>A66D4C48-6D6D-4531-AF51-8463E488EEB2</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>730</integer>
 		</dict>
 		<key>A76FF79E-3778-4855-93AA-20969F1A152A</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1430</integer>
+			<integer>1570</integer>
 		</dict>
 		<key>A8AA5019-512C-4773-83FC-35FEA14DD158</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1570</integer>
+			<integer>1710</integer>
 		</dict>
 		<key>AE15F1F6-37B0-4A47-BEE1-975354A81227</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1010</integer>
+			<integer>1150</integer>
 		</dict>
 		<key>B1C4E5F1-FE5D-4505-9AD6-3F12A4F4ACC8</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1430</integer>
+			<integer>1570</integer>
 		</dict>
 		<key>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</key>
 		<dict>
@@ -1263,21 +1361,21 @@ require_once('moegirlpedia.php');</string>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>1010</integer>
 		</dict>
 		<key>DB57612B-C4F5-4CF6-8A5D-29C86E40FAB1</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1150</integer>
+			<integer>1290</integer>
 		</dict>
 		<key>DDC3EC54-50D5-429B-BFE0-3C06F14766AE</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>1710</integer>
+			<integer>1850</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
