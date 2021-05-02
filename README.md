@@ -14,7 +14,7 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 * [Baidu (百度)](#baidu)
 * [Zhihu (知乎)](#zhihu)
 * [bilibili (哔哩哔哩)](#bilibili)
-* [Sina Weibo (新浪微博)](#sina-weibo)
+* ~~[Sina Weibo (新浪微博)](#sina-weibo)~~
 * [Taobao (淘宝)](#taobao)
 * [JoyBuy (京东)](#joybuy)
 * [Bangumi (番组计划)](#bangumi)
@@ -72,11 +72,9 @@ Support basic suggestions.
 
 ![bilibili](screenshots/bilibili.png)
 
-### Sina Weibo
+### ~~Sina Weibo~~
 
-Support basic suggestions.
-
-![sinaweibo](screenshots/sinaweibo.png)
+Disabled due to login needed.
 
 ### Taobao
 

@@ -756,8 +756,6 @@ require_once('bilibili.php');</string>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>36</integer>
-				<key>keyword</key>
-				<string>wb</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1141,6 +1139,8 @@ require_once('moegirlpedia.php');</string>
 		</dict>
 		<key>66A123A9-2115-4480-BAA7-19F66300097C</key>
 		<dict>
+			<key>note</key>
+			<string>Disabled due to login needed.</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
