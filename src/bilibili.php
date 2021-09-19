@@ -13,7 +13,7 @@ $response = request('https://s.search.bilibili.com/main/suggest?term='.urlencode
 $json = json_decode($response, true);
 
 foreach ($json as $key => $value) {
-    $data = $value['name'];
+    $data = $value['value'];
     $wf->result()
         ->title($data)
         ->subtitle('Search 哔哩哔哩 for '.$data)
