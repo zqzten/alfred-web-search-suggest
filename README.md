@@ -4,6 +4,15 @@ Alfred search suggest workflow for various popular websites. Inspired by the off
 
 [**DOWNLOAD**](https://github.com/AkikoZ/alfred-web-search-suggest/releases)
 
+## Important Note for macOS Monterey (12.0) and above
+
+Apple has removed the system PHP since macOS Monterey (12.0), so you should install PHP manually to continue using this workflow.
+
+A recommended way to install PHP is to use [Homebrew](https://brew.sh/). After installing Homebrew, you can run the following command in Terminal to install PHP:
+```shell
+brew install php
+```
+
 ## Supported Websites
 
 * [Google](#google)
