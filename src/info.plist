@@ -1388,7 +1388,7 @@ require_once('moegirlpedia.php');</string>
 		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.15</string>
+	<string>1.16</string>
 	<key>webaddress</key>
 	<string>https://github.com/zqzten/alfred-web-search-suggest</string>
 </dict>
