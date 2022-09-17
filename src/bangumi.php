@@ -46,9 +46,9 @@ if (strpos($query, ' ') !== false) {
             $name = html_entity_decode($sugg->name, ENT_QUOTES | ENT_HTML5);
             $nameCN = html_entity_decode($sugg->name_cn, ENT_QUOTES | ENT_HTML5);
             $url = $sugg->url;
-            $icon = $sugg->images === null ? ICON : $sugg->images->small;
-            $rank = $sugg->rank;
-            $score = $sugg->rating->score;
+            $icon = $sugg->images->small ?? ICON;
+            $rank = $sugg->rank ?? 0;
+            $score = $sugg->rating->score ?? 0;
             $wf->result()
                 ->title($name)
                 ->subtitle(($type === 'all' ? '【'.$typeNameDict[$sugg->type].'】' : '').$nameCN)
