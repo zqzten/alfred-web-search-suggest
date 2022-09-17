@@ -40,7 +40,7 @@ Support basic suggestions. [Proxy setting](#proxy-setting) is available in the w
 
 ### Wikipedia
 
-Support direct term suggestions and preview, language can be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support direct term suggestions and preview, **language MUST be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg**. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
 
 ![wikipedia-en](screenshots/wikipedia-en.png)
 
