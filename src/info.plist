@@ -1438,7 +1438,7 @@ For detailed introductions and screenshots / reporting a bug / making contributi
 		<string>proxy</string>
 	</array>
 	<key>version</key>
-	<string>1.17</string>
+	<string>1.18</string>
 	<key>webaddress</key>
 	<string>https://github.com/zqzten/alfred-web-search-suggest</string>
 </dict>
