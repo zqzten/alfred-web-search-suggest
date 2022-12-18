@@ -1401,11 +1401,33 @@ require_once('moegirlpedia.php');</string>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>The proxy used for some of the search suggestions. The format is the same as CURLOPT_PROXY. Leave it blank to use no proxy.</string>
+			<key>label</key>
+			<string>Proxy</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>proxy</string>
+		</dict>
+	</array>
 	<key>variables</key>
 	<dict>
 		<key>proxy</key>
-		<string>http://127.0.0.1:7890</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
