@@ -10,7 +10,7 @@ const ICON = '63F60794-BB56-4415-9372-BAF974C3A7E1.png';
 $wf = new Workflow;
 
 $xml = request('https://suggestqueries.google.com/complete/search?output=toolbar&q='.urlencode($query), $opt);
-$xml = simplexml_load_string(utf8_encode($xml));
+$xml = simplexml_load_string(mb_convert_encoding($xml, 'UTF-8', 'ISO-8859-1'));
 
 foreach ($xml as $sugg) {
     $data = (string) $sugg->suggestion->attributes()->data;
