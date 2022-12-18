@@ -34,13 +34,13 @@ brew install php
 
 ### Google
 
-Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support basic suggestions. [Proxy setting](#proxy-setting) is available.
 
 ![google](screenshots/google.png)
 
 ### Wikipedia
 
-Support direct term suggestions and preview, **language MUST be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg**. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support direct term suggestions and preview, **language MUST be specified with [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code in the first arg**. [Proxy setting](#proxy-setting) is available.
 
 ![wikipedia-en](screenshots/wikipedia-en.png)
 
@@ -48,25 +48,25 @@ Support direct term suggestions and preview, **language MUST be specified with [
 
 ### Wolfram|Alpha
 
-Support direct term suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support direct term suggestions. [Proxy setting](#proxy-setting) is available.
 
 ![wolframalpha](screenshots/wolframalpha.png)
 
 ### Amazon
 
-Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support basic suggestions. [Proxy setting](#proxy-setting) is available.
 
 ![amazon](screenshots/amazon.png)
 
 ### IMDB
 
-Support direct term suggestions and preview. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support direct term suggestions and preview. [Proxy setting](#proxy-setting) is available.
 
 ![imdb](screenshots/imdb.png)
 
 ### Pixiv
 
-Support basic suggestions. [Proxy setting](#proxy-setting) is available in the workflow environment variables.
+Support basic suggestions. [Proxy setting](#proxy-setting) is available.
 
 ![pixiv](screenshots/pixiv.png)
 
@@ -116,7 +116,7 @@ Support direct term suggestions and preview, type can be specified in the first 
 
 ### Moegirlpedia
 
-Support direct term suggestions and preview.
+Support direct term suggestions and preview. [Proxy setting](#proxy-setting) is available.
 
 ![moegirlpedia](screenshots/moegirlpedia.png)
 
@@ -143,7 +143,22 @@ If you want an alternative to search exactly what you typed, you can add custom 
 
 ### Proxy Setting
 
-Proxy setting is avaliable as a [workflow environment variable](https://www.alfredapp.com/help/workflows/advanced/variables/#environment) named `proxy`, here's some example settings:
+Proxy setting is avaliable as:
+
+* [User Configuration](https://www.alfredapp.com/help/workflows/user-configuration/) named `Proxy` (for Alfred 5+)
+* [Environment Variable](https://www.alfredapp.com/help/workflows/advanced/variables/#environment) named `proxy` (deprecated, only for Alfred 4 and older)
+
+for these websites:
+
+* Google
+* Wikipedia
+* Wolfram|Alpha
+* Amazon
+* IMDB
+* Pixiv
+* Moegirlpedia
+
+Here's some example settings:
 
 * If you use an HTTP proxy at `127.0.0.1:1087` without credentials, set `proxy` to `http://127.0.0.1:1087`
 * If you use a SOCKS5 proxy at `127.0.0.1:1086` with username `user` and password `pass`, set `proxy` to `socks5://user:pass@127.0.0.1:1086`
