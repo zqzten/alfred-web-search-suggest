@@ -194,7 +194,7 @@
 	<key>createdby</key>
 	<string>Zach Zhu</string>
 	<key>description</key>
-	<string>Get web search suggestions</string>
+	<string>Get in-line web search suggestions</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -1198,7 +1198,11 @@ require_once('moegirlpedia.php');</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>This workflow gives you in-line results for various popular websites, helping you find what you want even quicker!</string>
+	<string># Alfred Web Search Suggest
+
+Alfred search suggest workflow for various popular websites. Inspired by the official Google Suggest workflow.
+
+For detailed introductions and screenshots / reporting a bug / making contributions, refer to the project's [GitHub page](https://github.com/zqzten/alfred-web-search-suggest).</string>
 	<key>uidata</key>
 	<dict>
 		<key>004C4A20-A68E-4502-A7E0-990BD7FF2B46</key>
