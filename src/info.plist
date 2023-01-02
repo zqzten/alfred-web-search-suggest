@@ -1332,7 +1332,7 @@ For detailed introductions and screenshots / reporting a bug / making contributi
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.18</string>
+	<string>1.19</string>
 	<key>webaddress</key>
 	<string>https://github.com/zqzten/alfred-web-search-suggest</string>
 </dict>
