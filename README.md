@@ -90,7 +90,7 @@ Support basic suggestions.
 
 ### ~~Sina Weibo~~
 
-Disabled due to login needed.
+Removed due to login needed.
 
 ### Taobao
 
@@ -146,7 +146,7 @@ If you want an alternative to search exactly what you typed, you can add custom 
 Proxy setting is avaliable as:
 
 * [User Configuration](https://www.alfredapp.com/help/workflows/user-configuration/) named `Proxy` (for Alfred 5+)
-* [Environment Variable](https://www.alfredapp.com/help/workflows/advanced/variables/#environment) named `proxy` (deprecated, only for Alfred 4 and older)
+* [Environment Variable](https://www.alfredapp.com/help/workflows/advanced/variables/#environment) named `proxy` (for Alfred 4 and older)
 
 for these websites:
 
