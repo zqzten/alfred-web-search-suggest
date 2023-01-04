@@ -20,6 +20,8 @@ brew install php
 * [Wolfram|Alpha](#wolframalpha)
 * [Amazon](#amazon)
 * [IMDB](#imdb)
+* [DuckDuckGo](#duckduckgo)
+* [Brave Search](#brave-search)
 * [Pixiv](#pixiv)
 * [Baidu (百度)](#baidu)
 * [Zhihu (知乎)](#zhihu)
@@ -63,6 +65,18 @@ Support basic suggestions. [Proxy setting](#proxy-setting) is available.
 Support direct term suggestions and preview. [Proxy setting](#proxy-setting) is available.
 
 ![imdb](screenshots/imdb.png)
+
+### DuckDuckGo
+
+Support basic suggestions. [Proxy setting](#proxy-setting) is available.
+
+![duckduckgo](screenshots/duckduckgo.png)
+
+### Brave Search
+
+Support basic suggestions. [Proxy setting](#proxy-setting) is available.
+
+![bravesearch](screenshots/bravesearch.png)
 
 ### Pixiv
 
@@ -131,6 +145,8 @@ If you want an alternative to search exactly what you typed, you can add custom 
 * Wolfram|Alpha: `built-in`
 * Amazon: `built-in`
 * IMDB: `built-in`
+* DuckDuckGo: `built-in`
+* Brave Search: `https://search.brave.com/search?q={query}`
 * Pixiv: `https://www.pixiv.net/search.php?word={query}`
 * Baidu: `https://www.baidu.com/s?wd={query}`
 * Zhihu: `https://www.zhihu.com/search?q={query}`
@@ -155,6 +171,8 @@ for these websites:
 * Wolfram|Alpha
 * Amazon
 * IMDB
+* DuckDuckGo
+* Brave Search
 * Pixiv
 * Moegirlpedia
 
