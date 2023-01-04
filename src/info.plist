@@ -1524,7 +1524,7 @@ For detailed introductions and screenshots / reporting a bug / making contributi
 		</dict>
 	</array>
 	<key>version</key>
-	<string>1.19</string>
+	<string>1.20</string>
 	<key>webaddress</key>
 	<string>https://github.com/zqzten/alfred-web-search-suggest</string>
 </dict>
