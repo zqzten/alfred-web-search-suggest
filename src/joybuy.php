@@ -14,12 +14,11 @@ $response = request('https://dd-search.jd.com/?ver=2&key='.urlencode($query), $o
 $json = json_decode($response);
 
 foreach ($json as $sugg) {
-    $key = $sugg->keyword;
+    $key = $sugg->keyword ?? null;
     if (is_null($key)) continue;
-    $count = $sugg->qresult;
     $wf->result()
         ->title($key)
-        ->subtitle($count.' results')
+        ->subtitle('Search 京东 for '.$key)
         ->arg($key)
         ->icon(ICON)
         ->autocomplete($key);
