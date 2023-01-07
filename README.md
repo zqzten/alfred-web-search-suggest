@@ -2,13 +2,23 @@
 
 Alfred search suggest workflow for various popular websites. Inspired by the official Google Suggest workflow.
 
-[**DOWNLOAD**](https://github.com/AkikoZ/alfred-web-search-suggest/releases)
+## Download & Install
+
+✨ This workflow is available on official Alfred Gallery now! (which means it has been reviewed and verified by Alfred Team ✅)
+
+If you have Alfred 5 or above, you can install and resolve dependencies with one click and enjoy in-app updates in the future.
+
+➡️ [Go to official Alfred Gallery page](https://alfred.app/workflows/zqzten/web-search-suggest/)
+
+If you are still using Alfred 4 or older, you can [download from GitHub releases](https://github.com/zqzten/alfred-web-search-suggest/releases) and install it (just open with Alfred) manually.
 
 ## Important Note for macOS Monterey (12.0) and above
 
-Apple has removed the system PHP since macOS Monterey (12.0), so you should install PHP manually to continue using this workflow.
+Apple has removed the system PHP since macOS Monterey (12.0), so you should install PHP to continue using this workflow.
 
-A recommended way to install PHP is to use [Homebrew](https://brew.sh/). After installing Homebrew, you can run the following command in Terminal to install PHP:
+If you have Alfred 5 or above, you can [let Alfred resolve dependencies automatically](https://www.alfredapp.com/help/kb/dependencies/).
+
+Or you can use [Homebrew](https://brew.sh/) to install PHP manually. After installing Homebrew, you can run the following command in Terminal to install PHP:
 ```shell
 brew install php
 ```
