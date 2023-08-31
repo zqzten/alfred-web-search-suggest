@@ -27,6 +27,8 @@ brew install php
 
 * [Google](#google)
 * [Wikipedia](#wikipedia)
+* [YouTube](#youtube)
+* [Reddit](#reddit)
 * [Wolfram|Alpha](#wolframalpha)
 * [Amazon](#amazon)
 * [IMDB](#imdb)
@@ -57,6 +59,22 @@ Support direct term suggestions and preview, **language MUST be specified with [
 ![wikipedia-en](screenshots/wikipedia-en.png)
 
 ![wikipedia-zh](screenshots/wikipedia-zh.png)
+
+### YouTube
+
+Support direct term suggestions and preview.
+Need to create and add your own API key to youtube.php
+Tutorial to create API key: https://blog.hubspot.com/website/how-to-get-youtube-api-key#:~:text=step%2Dby%2Dstep.-,How%20to%20Get%20a%20YouTube%20API%20Key,-Log%20in%20to
+Miniature icons will be automatically cached to `ìcon-cache`folder.
+Use command `yt erase_cache` to erase the miniature cache folder. [Proxy setting](#proxy-setting) is available.
+
+![youtube](screenshots/youtube.png)
+
+### Reddit
+
+Support subreddit suggestions and preview. [Proxy setting](#proxy-setting) is available.
+
+![reddit](screenshots/reddit.png)
 
 ### Wolfram|Alpha
 
