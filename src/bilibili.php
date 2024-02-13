@@ -9,11 +9,12 @@ const ICON = 'AE15F1F6-37B0-4A47-BEE1-975354A81227.png';
 
 $wf = new Workflow;
 
-$response = request('https://s.search.bilibili.com/main/suggest?term='.urlencode($query));
-$json = json_decode($response, true);
+$response = request('https://s.search.bilibili.com/main/suggest?term='.urlencode($query).'&userid='.getenv('bilibili_uid'));
+$json = json_decode($response);
+$results = $json->result->tag;
 
-foreach ($json as $key => $value) {
-    $data = $value['value'];
+foreach ($results as $sugg) {
+    $data = $sugg->value;
     $wf->result()
         ->title($data)
         ->subtitle('Search 哔哩哔哩 for '.$data)

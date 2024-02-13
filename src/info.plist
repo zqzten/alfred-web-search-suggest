@@ -1522,6 +1522,27 @@ For detailed introductions and screenshots / reporting a bug / making contributi
 			<key>variable</key>
 			<string>proxy</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Your bilibili UID for personalized search suggestions of bilibili. You can find your UID at the personal information section in your personal homepage of bilibili. Leave it blank to disable personalization.</string>
+			<key>label</key>
+			<string>bilibili UID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>bilibili_uid</string>
+		</dict>
 	</array>
 	<key>version</key>
 	<string>1.20</string>
