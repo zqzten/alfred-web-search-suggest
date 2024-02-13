@@ -108,7 +108,9 @@ Support basic suggestions.
 
 ### bilibili
 
-Support basic suggestions.
+Support basic suggestions with personalization.
+
+注：可以在 [User Configuration](https://www.alfredapp.com/help/workflows/user-configuration/)（如果你使用 Alfred 4 及以下版本，则是在 [Environment Variable](https://www.alfredapp.com/help/workflows/advanced/variables/#environment)）中设置你的 bilibili UID 以获得个性化搜索建议。你可以在你的 bilibili 个人主页的个人资料栏找到该 UID。
 
 ![bilibili](screenshots/bilibili.png)
 
